@@ -3,7 +3,8 @@ package be.vdab.goededoel.entities;
 import java.math.BigDecimal;
 
 /**
- * Een <strong> goed doel waarvoor men cash inzamelt
+ * Een <strong> goed doel waarvoor men cash inzamelt.
+ * TOMCAT DEPLOYMENT
  * @author Stijn.Verholen
  *
  */
