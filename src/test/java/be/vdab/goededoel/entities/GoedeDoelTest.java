@@ -1,6 +1,7 @@
 package be.vdab.goededoel.entities;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 import java.math.BigDecimal;
 
@@ -25,5 +26,15 @@ public class GoedeDoelTest {
 	@Test
 	public void aNewCharityHasNotEarned() {
 		assertEquals(0, doel.getOpgebracht().compareTo(BigDecimal.ZERO));
+	}
+	
+	@Test
+	public void goedeDoelenMetDezelfdeNaamMoetenVolgensEqualsGelijkZijn() {
+	assertEquals(new GoedeDoel("CLINICLOWNS"), doel);
+	}
+	@Test
+	public void goedeDoelenMetVerschillendeNaamMoetenVolgensEqualsVerschillendZijn()
+	{
+	assertNotEquals(new GoedeDoel("Unicef"), doel);
 	}
 }
